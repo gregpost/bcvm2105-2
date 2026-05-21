@@ -1,0 +1,6 @@
+{
+  "name": "Система БЦВМ / ЯЛС",
+  "description": "UDP клиент-серверная система согласованная с протоколом C++ (152/8192 байт) для управления приводами и пиропатронами.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

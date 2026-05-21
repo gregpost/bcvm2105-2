@@ -1,11 +1,32 @@
-<div align="center">
+# Система управления YAV/YALS (UDP)
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+Это приложение предназначено для обмена данными между управляющим устройством (Master/YAV) и подчиненным устройством (Slave/YALS) по протоколу UDP.
 
-  <h1>Built with AI Studio</h2>
+## Характеристики протокола
+- **YAV (Master) -> YALS (Slave)**: Пакет 152 байта.
+- **YALS (Slave) -> YAV (Master)**: Пакет 8192 байта.
+- **Транспорт**: UDP.
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+## Локальная установка на Windows
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+Для запуска системы на локальном компьютере вам потребуется установленный [Node.js](https://nodejs.org/).
 
-</div>
+### 1. Подготовка
+Скачайте или распакуйте файлы проекта в удобную директорию.
+
+### 2. Установка зависимостей
+Откройте терминал (PowerShell или CMD) в папке проекта и выполните:
+```bash
+npm install
+```
+
+### 3. Конфигурация сети
+Отредактируйте файл `src/config_data.ts` для настройки IP-адресов вашего оборудования.
+
+### 4. Запуск
+Для запуска сервера и клиентской части:
+```bash
+npm run dev
+```
+
+Приложение будет доступно по адресу: [http://localhost:3000](http://localhost:3000)
